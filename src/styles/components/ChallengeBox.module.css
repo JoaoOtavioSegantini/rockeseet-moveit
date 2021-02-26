@@ -1,0 +1,104 @@
+.challengeBoxContainer {
+    height: 100%;
+    background: var(--white);
+    border-radius: 5px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+ 
+.challengeBoxisNotActive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.challengeBoxisNotActive strong {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.challengeBoxisNotActive p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.4;
+    min-width: 70%;
+    margin-top: 3rem;
+}
+.challengeBoxisNotActive p img {
+    margin-bottom: 1rem;
+}
+
+.challengeBoxisActive {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.challengeBoxisActive header {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 0 2rem 1.5rem;
+    border-bottom: 1px solid var(--gray-line);
+
+}
+
+.challengeBoxisActive main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.challengeBoxisActive main strong {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--title);
+    margin: 1.5rem 0 1rem;
+}
+.challengeBoxisActive main p {
+    line-height: 1.5;
+}
+
+.challengeBoxisActive footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+}
+
+.challengeBoxisActive footer button {
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 5px;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: filter 0.2s;
+
+}
+.challengeBoxisActive footer button.challengeFailedButton {
+      background: var(--red);
+}
+
+.challengeBoxisActive footer button.challengeSuccedButton {
+    background: var(--green);
+}
+
+.challengeBoxisActive footer button:hover {
+    filter: brightness(0.9);
+}
