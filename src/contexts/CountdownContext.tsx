@@ -23,7 +23,7 @@ export function CoundownProvider({ children } : CountDownProps) {
  
     const { startNewChallenge } = useContext(challengesContexts)
 
-    const [time, setTime] = useState(0.05*60)
+    const [time, setTime] = useState(25*60)
     const minutes = Math.floor(time / 60);
     const seconds = time % 60;
     const [active, setActive] = useState(false);
@@ -38,7 +38,7 @@ export function CoundownProvider({ children } : CountDownProps) {
         clearTimeout(countDownTimeOut);
         setActive(false);
         setHasFinihed(false);
-        setTime(0.05*60);
+        setTime(25*60);
     }
     useEffect(() => {
         if(active && time > 0){
